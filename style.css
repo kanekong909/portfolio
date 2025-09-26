@@ -200,7 +200,6 @@ nav.scrolled {
     font-size: 6rem;
     margin: 0 auto;
 }
-
 .profile-img img {
     width: 100%;
     object-fit: cover;
@@ -213,7 +212,6 @@ nav.scrolled {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
-
 .skill-card {
     background: rgba(255, 255, 255, 0.05);
     padding: 2rem;
@@ -221,12 +219,10 @@ nav.scrolled {
     border: 1px solid rgba(100, 255, 218, 0.2);
     transition: all 0.3s ease;
 }
-
 .skill-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(100, 255, 218, 0.1);
 }
-
 .skill-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -239,7 +235,6 @@ nav.scrolled {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
 }
-
 .project-card {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 15px;
@@ -247,15 +242,13 @@ nav.scrolled {
     border: 1px solid rgba(100, 255, 218, 0.2);
     transition: all 0.3s ease;
 }
-
 .project-card:hover {
     transform: scale(1.02);
     box-shadow: 0 20px 40px rgba(100, 255, 218, 0.1);
 }
-
 .project-image {
     height: 200px;
-    background: linear-gradient(45deg, #64ffda, #1de9b6);
+    background: linear-gradient(45deg, #191919, #020202);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -266,24 +259,47 @@ nav.scrolled {
     width: 100%;
     object-fit: cover;
 }
-
 .project-content {
     padding: 1.5rem;
 }
-
-.project-content a {
-    text-decoration: none;
+.project-content p {
+    color: #b0b0b0;
+}
+.glass-button {
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: auto;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
     color: white;
-    font-size: 21px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
-.project-content a:hover {
-    text-decoration: 1px solid white;
+.glass-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
 }
-
+.glass-button::after {
+    content: '↗';
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+.glass-button:hover::after {
+    transform: translate(2px, -2px);
+}
 .project-title {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
-    color: #64ffda;
+    color: #ffffff;
 }
 
 /* Contacto */
@@ -292,20 +308,17 @@ nav.scrolled {
     max-width: 600px;
     margin: 0 auto;
 }
-
 .contact-info {
     display: flex;
     justify-content: center;
     gap: 3rem;
     margin-top: 2rem;
 }
-
 .contact-item {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-
 .contact-icon {
     font-size: 1.5rem;
     color: #64ffda;
@@ -362,7 +375,6 @@ footer {
     pointer-events: none;
     z-index: -1;
 }
-
 .particle {
     position: absolute;
     width: 2px;
